@@ -4,9 +4,8 @@ import axios from 'axios'
 import { toast } from 'react-toastify'
 import { useState } from 'react'
 
-const List = () => {
+const List = ({url}) => {
 
-  const url='http://localhost:4000'
   const [list, setlist] = useState([])
 
   const fetchList=async()=>{

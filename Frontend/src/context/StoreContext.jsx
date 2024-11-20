@@ -5,6 +5,7 @@ export const StoreContext = createContext(null);
 
 const StoreContextProvider = (props) => {
   const [cartItem, setCartItem] = useState({});
+  const url='http://localhost:4000'
 
   const addToCart = (itemId) => {
     setCartItem((prev) => ({
@@ -40,7 +41,8 @@ const StoreContextProvider = (props) => {
     cartItem,
     addToCart,
     removeFromCart,
-    getTotalCartAmount
+    getTotalCartAmount,
+    url
   };
 
   return (
