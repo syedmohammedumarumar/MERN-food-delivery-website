@@ -24,7 +24,7 @@ const Cart = () => {
 
         {
           food_list.map((item, index) => {
-            if (cartItem[item._id] > 0) {
+            if (cartItem && cartItem[item._id] > 0)  {
               return (
                 <div>
 
