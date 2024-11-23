@@ -4,7 +4,7 @@ import Stripe from "stripe";
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-const frontend_url = 'http://localhost:5174'; // Update this if deploying to a production environment
+const frontend_url = 'https://food-delivery-frontend-r98e.onrender.com/'; // Update this if deploying to a production environment
 
 // Placing user order from frontend
 const placeOrder = async (req, res) => {
